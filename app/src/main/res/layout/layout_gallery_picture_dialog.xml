@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/bt_gallery_picture_dialog_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_photo_camera_24"
+        android:text="Prendre une photo" />
+
+    <Button
+        android:id="@+id/bt_gallery_picture_dialog_select_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_gallery_picture_dialog_take_picture"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_baseline_add_photo_alternate_24"
+        android:text="Sélectionner une photo" />
+
+
+    <EditText
+        android:id="@+id/et_gallery_picture_dialog_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_gallery_picture_dialog_select_picture"
+        android:layout_alignParentStart="true"
+        android:hint="Ajouter une description" />
+
+</RelativeLayout>

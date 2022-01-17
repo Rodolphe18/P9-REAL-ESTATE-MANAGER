@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fragment_main_item_illustration"
+        android:layout_width="@dimen/fragment_main_item_size_iv"
+        android:layout_height="100dp"
+        android:contentDescription="@string/picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_fragment_main_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/fragment_main_item_text_margin_top"
+        android:text="@string/category"
+        android:textSize="@dimen/fragment_main_item_size_category"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fragment_main_item_illustration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_fragment_main_item_district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fragment_main_item_text_margin"
+        android:layout_marginTop="@dimen/fragment_main_item_text_margin_top"
+        android:text="@string/district"
+        android:textSize="@dimen/fragment_main_item_size_district"
+        app:layout_constraintStart_toEndOf="@+id/fragment_main_item_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_main_item_category" />
+
+    <LinearLayout
+        android:id="@+id/et_add_activity_linearLayout_poi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_main_item_illustration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_main_item_district">
+
+        <ImageView
+            android:id="@+id/iv_fragment_main_item_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_main_item_text_margin"
+            android:layout_marginTop="@dimen/fragment_main_item_text_margin_top"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_baseline_eur_24"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_fragment_main_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="50"
+            android:text="@string/price"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fragment_main_item_size_price" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fragment_main_item_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="VENDU LE dd/mm/yyyy"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/et_add_activity_linearLayout_poi"
+        app:layout_constraintStart_toEndOf="@+id/fragment_main_item_illustration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

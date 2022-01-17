@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  ITEM LIST HOUSE -->
+    <dimen name="fragment_main_item_size_iv">100dp</dimen>
+    <dimen name="fragment_main_item_size_category">20sp</dimen>
+    <dimen name="fragment_main_item_size_district">16sp</dimen>
+    <dimen name="fragment_main_item_size_price">25sp</dimen>
+    <dimen name="fragment_main_item_text_margin">10dp</dimen>
+    <dimen name="fragment_main_item_text_margin_top">5dp</dimen>
+
+    <!--  DETAIL FRAGMENT
+    <dimen name="fragment_main_item_size_iv">100dp</dimen>
+    <dimen name="fragment_main_item_size_category">20sp</dimen>
+    <dimen name="fragment_main_item_size_district">16sp</dimen>
+    <dimen name="fragment_main_item_size_price">25sp</dimen>
+    <dimen name="fragment_main_item_text_margin">10dp</dimen>
+    <dimen name="fragment_main_item_text_margin_top">5dp</dimen>
+
+-->
+
+</resources>

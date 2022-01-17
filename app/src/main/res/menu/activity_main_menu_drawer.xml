@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/activity_main_drawer_conversion_euro_dollars"
+            android:icon="@drawable/ic_baseline_price_change_24"
+            android:title="@string/conversion_euro_dollars" />
+        <item
+            android:id="@+id/activity_main_drawer_conversion_dollars_euro"
+            android:icon="@drawable/ic_baseline_eur_24"
+            android:title="@string/conversion_dollars_euro" />
+
+        <item
+            android:id="@+id/activity_main_drawer_loan_calculator"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="@string/loan_calculator" />
+
+    </group>
+
+</menu>

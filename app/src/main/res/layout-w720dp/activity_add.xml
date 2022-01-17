@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddActivity">
+
+
+    <TextView
+        android:id="@+id/tv_add_activity_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:text="Catégorie :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_add_activity_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:hint="Catégorie du bien à vendre"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_category" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:text="Secteur :"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_activity_category"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_add_activity_district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:ems="10"
+        android:hint="Secteur"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toEndOf="@+id/et_add_activity_category"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_district" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:text="Prix :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_category" />
+
+    <EditText
+        android:id="@+id/et_add_activity_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:ems="10"
+        android:hint="Prix"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_price" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="50"
+        android:text="Surface :"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/tv_add_activity_price"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_district" />
+
+    <EditText
+        android:id="@+id/et_add_activity_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Surface"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_area" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nombre de :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearlayout_address" />
+
+    <EditText
+        android:id="@+id/et_add_activity_room"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Pièces"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_room" />
+
+    <EditText
+        android:id="@+id/et_add_activity_bedroom"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Chambres"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/et_add_activity_room"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_room" />
+
+    <EditText
+        android:id="@+id/et_add_activity_bathroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Salle de bain"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/et_add_activity_bedroom"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_room" />
+
+    <LinearLayout
+        android:id="@+id/et_add_activity_linearLayout_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:ems="10"
+        android:hint="Point d'intérêt"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_bedroom" >
+
+        <CheckBox
+            android:id="@+id/cb_add_activity_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ecole"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/cb_add_activity_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Commerce"
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/cb_add_activity_public_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Transport "
+            android:textSize="10sp" />
+
+        <CheckBox
+            android:id="@+id/cb_add_activity_swimming_pool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Piscine"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_activity_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Description  :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_agent_name" />
+
+    <EditText
+        android:id="@+id/et_add_activity_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_add_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_description" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_agent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Agent immobilier :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearLayout_picture_button" />
+
+    <EditText
+        android:id="@+id/et_add_activity_agent_name"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:hint="Prénom"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_add_activity_agent_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearLayout_picture_button" />
+
+    <Button
+        android:id="@+id/bt_add_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Ajouter "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_description" />
+
+    <TextView
+        android:id="@+id/tv_add_activity_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Adresse :"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_price" />
+
+    <LinearLayout
+        android:id="@+id/et_add_activity_linearlayout_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_activity_address">
+
+        <EditText
+            android:id="@+id/et_add_activity_street_number"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="N°"
+            android:inputType="number"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_add_activity_street_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:ems="10"
+            android:hint="Rue"
+            android:inputType="textPersonName"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_add_activity_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Code postal"
+            android:inputType="number"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/et_add_activity_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:ems="10"
+            android:hint="Ville"
+            android:inputType="textPersonName"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/et_add_activity_linearLayout_picture_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearLayout_poi">
+
+        <Button
+            android:id="@+id/bt_add_activity_select_description_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_photo_24"
+            android:text="description"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bt_add_activity_add_description_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+ Ajouter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/bt_add_activity_select_gallerie_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_photo_library_24"
+            android:text="gallerie"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bt_add_activity_add_gallerie_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+ Ajouter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_add_activity_date_of_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Date de vente"
+        android:visibility="gone"
+        android:inputType="date"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_add_activity_agent_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearLayout_picture_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
