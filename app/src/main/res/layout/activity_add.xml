@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="50"
-        android:text="Catégorie :"
+        android:text="@string/category"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_weight="50"
-        android:hint="Catégorie du bien à vendre"
+        android:hint="@string/category_of_property_to_sell"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_weight="50"
-        android:text="Secteur :"
+        android:text="@string/district"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="50"
         android:ems="10"
-        android:hint="Secteur"
+        android:hint="@string/district"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="50"
-        android:text="Prix :"
+        android:text="@string/Price"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_add_activity_category" />
@@ -78,7 +78,7 @@
         android:layout_marginStart="8dp"
         android:layout_weight="50"
         android:ems="10"
-        android:hint="Prix"
+        android:hint="@string/Price"
         android:inputType="number"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_weight="50"
-        android:text="Surface :"
+        android:text="@string/area"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -102,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Surface"
+        android:hint="@string/area"
         android:inputType="number"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Nombre de :"
+        android:text="@string/numbers_of"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearlayout_address" />
@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:hint="Pièces"
+        android:hint="@string/Rooms"
         android:inputType="number"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:hint="Chambres"
+        android:hint="@string/Bedrooms"
         android:inputType="number"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/et_add_activity_room"
@@ -151,7 +151,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:hint="Salle de bain"
+        android:hint="@string/Bathroom"
         android:inputType="number"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/et_add_activity_bedroom"
@@ -177,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Ecole"
+            android:text="@string/school"
             android:textSize="12sp" />
 
         <CheckBox
@@ -185,7 +185,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Commerce"
+            android:text="@string/business"
             android:textSize="12sp" />
 
         <CheckBox
@@ -193,7 +193,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Transport "
+            android:text="@string/transport"
             android:textSize="12sp" />
 
         <CheckBox
@@ -201,7 +201,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Piscine"
+            android:text="@string/swimming_pool"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -239,7 +239,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Agent immobilier :"
+        android:text="@string/real_estate_agent"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_add_activity_linearLayout_picture_button" />
@@ -249,7 +249,7 @@
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:ems="10"
-        android:hint="Prénom"
+        android:hint="@string/first_name"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/tv_add_activity_agent_name"
@@ -262,7 +262,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="Ajouter "
+        android:text="@string/add_button"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -275,7 +275,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Adresse :"
+        android:text="@string/adress"
         android:textSize="12sp"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -308,7 +308,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Rue"
+            android:hint="@string/street"
             android:inputType="textPersonName"
             android:textSize="10sp" />
 
@@ -318,7 +318,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
-            android:hint="Code postal"
+            android:hint="@string/postal_code"
             android:inputType="number"
             android:textSize="10sp" />
 
@@ -328,7 +328,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Ville"
+            android:hint="@string/city"
             android:inputType="textPersonName"
             android:textSize="10sp" />
     </LinearLayout>
@@ -360,7 +360,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="+ Ajouter"
+            android:text="@string/add"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textSize="10sp" />
 
@@ -371,7 +371,7 @@
             android:layout_weight="1"
             android:drawableLeft="@drawable/ic_baseline_photo_library_24"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:text="gallerie"
+            android:text="@string/gallery"
             android:textSize="10sp" />
 
         <Button
@@ -379,7 +379,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="+ Ajouter"
+            android:text="@string/add"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textSize="10sp" />
 
@@ -392,7 +392,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="Date de vente"
+        android:hint="@string/sell_date"
         android:inputType="date"
         android:textSize="10dp"
         android:visibility="gone"

@@ -30,14 +30,14 @@ public class GalleryPictureDialog extends AppCompatDialogFragment implements Vie
         View view = inflater.inflate(R.layout.layout_gallery_picture_dialog, null);
 
         builder.setView(view);
-        builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 String pictureDescription = description.getText().toString();
                 dialogListener.applyDescription(pictureDescription);
             }
         });
-        builder.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
             }

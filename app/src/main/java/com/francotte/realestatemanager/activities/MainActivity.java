@@ -59,7 +59,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // bug 1: Problème de ressource
+        // bug 1: Problème de ressources
+
+       // this.textViewMain = findViewById(R.id.activity_second_activity_text_view_main);
+       // this.textViewQuantity = findViewById(R.id.activity_main_activity_text_view_quantity);
+
         // this.textViewMain = findViewById(R.id.activity_main_activity_text_view_main);
         // this.textViewQuantity = findViewById(R.id.activity_main_activity_text_view_quantity);
 
@@ -87,7 +91,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void configureTextViewQuantity() {
         int quantity = Utils.convertDollarToEuro(100);
         this.textViewQuantity.setTextSize(20);
-        // Problème de typage
+        // Bug 2 : Problème de typage
+        // this.textViewQuantity.setText(quantity);
         this.textViewQuantity.setText(String.valueOf(quantity));
     }
 
@@ -206,11 +211,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id) {
             case R.id.activity_main_drawer_conversion_euro_dollars:
                 this.changeCurrencyToDollarsAndUpdateDataBase(houseList);
-                Toast.makeText(this, "Prix en dollars", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Price in dollars", Toast.LENGTH_LONG).show();
                 break;
             case R.id.activity_main_drawer_conversion_dollars_euro:
                 this.changeCurrencyToEuroAndUpdateDataBase(houseList);
-                Toast.makeText(this, "Prix en euros", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Price in euros", Toast.LENGTH_LONG).show();
                 break;
             case R.id.activity_main_drawer_loan_calculator:
                 Intent intentCalculator = new Intent(MainActivity.this, LoanCalculatorActivity.class);
@@ -240,8 +245,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     intentModify.putExtra("id", id);
                     startActivity(intentModify);
                 } else {
-                    Toast.makeText(this, "Selectionner un bien à vendre", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "Select a property to sell", Toast.LENGTH_LONG).show();
                 }
+                return true;
+
+            //Start AddActivity when modify button is clicked
+            case R.id.menu_activity_main_toolbar_map:
+                    Intent intentMap = new Intent(MainActivity.this, MapActivity.class);
+                    startActivity(intentMap);
                 return true;
 
             //Start SearchActivity when add button is clicked
@@ -252,6 +263,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+
     }
 
     @Override

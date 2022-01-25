@@ -50,8 +50,8 @@ public class RealEstateManagerViewModel extends ViewModel {
 
     public void updateHouse(String category,
                             String district,
-                            boolean isEuro,
                             int price,
+                            boolean isEuro,
                             int area,
                             int numberOfRooms,
                             int numberOfBathrooms,
@@ -69,8 +69,8 @@ public class RealEstateManagerViewModel extends ViewModel {
         executor.execute(() -> {
             houseDataSource.updateHouse(category,
                     district,
-                    isEuro,
                     price,
+                    isEuro,
                     area,
                     numberOfRooms,
                     numberOfBathrooms,

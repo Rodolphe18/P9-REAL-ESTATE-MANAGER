@@ -5,17 +5,23 @@
     <item
         android:id="@+id/menu_activity_main_toolbar_add"
         android:icon="@drawable/ic_baseline_add_44"
-        android:title="Ajouter"
+        android:title="@string/add"
         app:showAsAction="ifRoom"></item>
+    <item
+    android:id="@+id/menu_activity_main_toolbar_map"
+    android:icon="@drawable/ic_baseline_map_24"
+    android:title="Map"
+    app:showAsAction="ifRoom"></item>
     <item
         android:id="@+id/menu_activity_main_toolbar_modify"
         android:icon="@drawable/ic_baseline_create_24"
-        android:title="Modifier"
-        app:showAsAction="ifRoom"></item>
+        android:title="@string/modify"
+        app:showAsAction="never"></item>
     <item
         android:id="@+id/menu_activity_main_toolbar_search"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="Rechercher"
-        app:showAsAction="ifRoom"></item>
+        android:title="@string/filter"
+        app:showAsAction="never"></item>
+
 
 </menu>

@@ -122,7 +122,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             addDescriptionPictureBtn.setVisibility(View.GONE);
             dateOfSaleInput.setVisibility(View.GONE);
 
-            addBtn.setText("Ajouter");
+            addBtn.setText("ADD");
         } else {
             //Modify
             this.initActivity();
@@ -133,7 +133,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             addressTv.setVisibility(View.GONE);
 
             this.getCurrentHouse(id);
-            addBtn.setText("Modifier");
+            addBtn.setText("MODIFY");
         }
 
         //Listeners
@@ -243,43 +243,43 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
     private Boolean checkInput() {
         Boolean isOk;
         if (category.isEmpty()) {
-            Toast.makeText(this, "Veuillez indiquer la catégorie du bien", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a category of the property", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (district.isEmpty()) {
-            Toast.makeText(this, "Veuillez saisir le secteur du bien", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a district of the property", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (streetNumber.isEmpty()) {
-            Toast.makeText(this, "Veuillez saisir un numéro de rue", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a number of the street", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (streetName.isEmpty()) {
-            Toast.makeText(this, "Veuillez indiquer une rue", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a street", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (zipCode.isEmpty()) {
-            Toast.makeText(this, "Veuillez indiquer le code postal", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a postal code", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (city.isEmpty()) {
-            Toast.makeText(this, "Veuillez saisir une ville", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a city", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (description.isEmpty()) {
-            Toast.makeText(this, "Veuillez indiquer une description", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate a description", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (realEstateAgent.isEmpty()) {
-            Toast.makeText(this, "Veuillez indiquer le nom de l'agent immobilier", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indcate the real estate agent name", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (price == 0) {
-            Toast.makeText(this, "Veuillez indiquer le prix", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indcate th price", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (area == 0) {
-            Toast.makeText(this, "Veuillez indiquer la surface", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the area", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (numberOfRooms == 0) {
-            Toast.makeText(this, "Veuillez indiquer le nombre de pièce", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the number of rooms", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (numberOfBedRooms == 0) {
-            Toast.makeText(this, "Veuillez indiquer le nombre de chambre", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the number of bedrooms", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (numberOfBathrooms == 0) {
-            Toast.makeText(this, "Veuillez indiquer le nombre de salle de bain", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the number of bathrooms", Toast.LENGTH_LONG).show();
             isOk = false;
         } else {
             isOk = true;
@@ -357,7 +357,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
                 swimmingPool,
                 description, picture, available, dateOfEntry, dateOfSale, realEstateAgent);
 
-        this.realEstateManagerViewModel.updateHouse(category, district, true, price, area, numberOfRooms, numberOfBathrooms, numberOfBedRooms,
+        this.realEstateManagerViewModel.updateHouse(category, district,  price, true, area, numberOfRooms, numberOfBathrooms, numberOfBedRooms,
                 school,
                 shopping,
                 publicTransport,
@@ -439,14 +439,14 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
                     this.collectInputUser();
                     if (checkInput()) {
                         this.createHouseAndAddItToDatabase();
-                        Toast.makeText(this, "Le bien a été ajouté ", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, "The property has been added ", Toast.LENGTH_LONG).show();
                         com.francotte.realestatemanager.activities.AddActivity.this.finish();
                     }
                 } else {
                     //Update house in database
                     this.collectInputUser();
                     this.getHouseToUpdate(id);
-                    Toast.makeText(this, "Le bien a été modifié ", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "The property has been modified ", Toast.LENGTH_LONG).show();
                     com.francotte.realestatemanager.activities.AddActivity.this.finish();
                 }
                 break;
@@ -454,13 +454,13 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             case R.id.bt_add_activity_add_description_picture:
                 //Update description picture in database
                 this.updatePictureDescriptionInDatabase();
-                Toast.makeText(this, "L'image de description a été modifiée ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "The description picture has been modified ", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.bt_add_activity_add_gallerie_picture:
                 //Add illustration picture in database
                 createIllustrationAndAddItToDatabase(id);
-                Toast.makeText(this, "La photo a été ajoutée dans la galerie ", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "The picture has been added in the galery ", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.bt_add_activity_select_description_picture:

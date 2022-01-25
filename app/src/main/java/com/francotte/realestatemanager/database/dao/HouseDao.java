@@ -32,8 +32,8 @@ public interface HouseDao {
 
     @Query("UPDATE House SET category = :category," +
             "district = :district," +
-            "isEuro = :isEuro," +
             "price = :price," +
+            "isEuro = :isEuro," +
             "area = :area," +
             "numberOfRooms = :numberOfRooms," +
             "numberOfBathrooms= :numberOfBathrooms," +

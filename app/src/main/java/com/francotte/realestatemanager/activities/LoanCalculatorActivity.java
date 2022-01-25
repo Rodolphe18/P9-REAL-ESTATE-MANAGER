@@ -48,8 +48,8 @@ public class LoanCalculatorActivity extends AppCompatActivity implements View.On
         double monthlyPayment = Utils.calculateMonthlyPayment(interestRate, loanPeriod, loanAmount);
         double totalPayment = Utils.calculateTotalPayment(monthlyPayment, loanPeriod);
 
-        tvMonthlyPayment.setText("Montant de vos mensualités : " + (new DecimalFormat("##.##").format(monthlyPayment)) + " €");
-        tvTotalPayment.setText("Coût du crédit : " + (new DecimalFormat("##.##").format(totalPayment)) + " €");
+        tvMonthlyPayment.setText("Monthly payment : " + (new DecimalFormat("##.##").format(monthlyPayment)) + " €");
+        tvTotalPayment.setText("Credit cost : " + (new DecimalFormat("##.##").format(totalPayment)) + " €");
     }
 
     @Override

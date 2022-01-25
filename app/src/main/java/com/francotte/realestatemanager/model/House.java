@@ -156,8 +156,8 @@ public class House implements Serializable {
         final House house = new House();
         if (values.containsKey("category")) house.setCategory(values.getAsString("category"));
         if (values.containsKey("district")) house.setDistrict(values.getAsString("district"));
-        if (values.containsKey("isEuro")) house.setEuro(values.getAsBoolean("isEuro"));
         if (values.containsKey("price")) house.setCategory(values.getAsString("price"));
+        if (values.containsKey("isEuro")) house.setEuro(values.getAsBoolean("isEuro"));
         if (values.containsKey("area")) house.setArea(values.getAsInteger("area"));
         if (values.containsKey("numberOfRooms"))
             house.setNumberOfRooms(values.getAsInteger("numberOfRooms"));
@@ -182,7 +182,7 @@ public class House implements Serializable {
         if (values.containsKey("dateOfSale")) house.setDateOfSale(values.getAsString("dateOfSale"));
         if (values.containsKey("realEstateAgent"))
             house.setRealEstateAgent(values.getAsString("realEstateAgent"));
-        if (values.containsKey("realEstateAgent")) house.setId(values.getAsLong("houseId"));
+        if (values.containsKey("houseId")) house.setId(values.getAsLong("houseId"));
         return house;
     }
 

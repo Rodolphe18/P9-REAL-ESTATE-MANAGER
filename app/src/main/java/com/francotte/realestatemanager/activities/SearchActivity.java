@@ -141,31 +141,31 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         Boolean isOk;
 
         if (district.isEmpty()) {
-            Toast.makeText(this, "Saisir le secteur du bien", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the district", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (miniPrice == 0) {
-            Toast.makeText(this, "Saisir le prix mini", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the minimum price", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (maxiPrice == 0) {
-            Toast.makeText(this, "Saisir le prix maxi", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the maximum price", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (miniArea == 0) {
-            Toast.makeText(this, "Saisir la surface mini", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the minimum area", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (maxiArea == 0) {
-            Toast.makeText(this, "Saisir indiquer la surface maxi", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the maximum area", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (miniRoom == 0) {
-            Toast.makeText(this, "Saisir indiquer le nombre de pièces mini", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the minimum number of rooms", Toast.LENGTH_LONG).show();
             isOk = false;
         } else if (maxiRoom == 0) {
-            Toast.makeText(this, "Saisir indiquer le nombre de pièces maxi", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please indicate the maximum number of rooms", Toast.LENGTH_LONG).show();
             isOk = false;
         } else {
             isOk = true;
         }
 
-        Log.e("Test", "Valeur checkInput :" + isOk.toString());
+        Log.e("Test", "Value checkInput :" + isOk.toString());
 
         return isOk;
     }
@@ -173,7 +173,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     private void getSearchedList(List<House> houseList) {
 
         if (houseList.isEmpty()) {
-            Toast.makeText(this, "Aucun bien ne correspond", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "No property corresponding", Toast.LENGTH_LONG).show();
         } else {
             Intent intent = new Intent();
             intent.putExtra(BUNDLE_RESULT_LIST, (Serializable) houseList);

@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
-            android:text="@string/surface"
+            android:text="@string/area"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/iv_fragment_detail_surface"
@@ -120,7 +120,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
-            android:contentDescription="@string/surface"
+            android:contentDescription="@string/area"
             android:src="@drawable/ic_baseline_crop_3_2_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_fragment_detail" />
@@ -344,7 +344,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="5dp"
-                    android:text="Agent :"
+                    android:text="@string/agent"
                     android:textStyle="bold" />
 
                 <TextView

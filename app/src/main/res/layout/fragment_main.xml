@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="10dp"
-        android:text="Afficher tous les biens"
+        android:text="@string/display_all_properties"
         android:textSize="14dp"
         android:visibility="invisible" />
 

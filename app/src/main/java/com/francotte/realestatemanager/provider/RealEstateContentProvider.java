@@ -15,7 +15,7 @@ import com.francotte.realestatemanager.model.House;
 public class RealEstateContentProvider extends ContentProvider {
 
     //For data
-    public static final String AUTHORITY = "com.openclassrooms.realestatemanager.provider";
+    public static final String AUTHORITY = "com.francotte.realestatemanager.provider";
     public static final String TABLE_NAME = House.class.getSimpleName();
     public static final Uri URI_HOUSE = Uri.parse("content://" + AUTHORITY + "/" + TABLE_NAME);
 

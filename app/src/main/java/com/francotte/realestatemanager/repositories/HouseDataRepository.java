@@ -44,8 +44,8 @@ public class HouseDataRepository {
     //Update house
     public void updateHouse(String category,
                             String district,
-                            boolean isEuro,
                             int price,
+                            boolean isEuro,
                             int area,
                             int numberOfRooms,
                             int numberOfBathrooms,

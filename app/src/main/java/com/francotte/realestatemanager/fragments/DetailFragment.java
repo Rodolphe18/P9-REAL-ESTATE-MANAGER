@@ -155,16 +155,16 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
 
         List<String> pois = new ArrayList<>();
         if (house.getSchool() == 1) {
-            pois.add("école");
+            pois.add("school");
         }
         if (house.getShopping() == 1) {
-            pois.add("commerce");
+            pois.add("business");
         }
         if (house.getPublicTransport() == 1) {
             pois.add("transport");
         }
         if (house.getSwimmingPool() == 1) {
-            pois.add("piscine");
+            pois.add("swimming pool");
         }
         String list = "";
         for (String poi : pois) {
@@ -195,7 +195,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
             double lat = location.getLatitude();
             double lng = location.getLongitude();
             String url = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=15&size=200x200" +
-                    "&markers=color:red%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyCV1RfW578IO-3Sr5zeb8uK5xdLx_Gz_5M";
+                    "&markers=color:red%7C" + lat + "," + lng + "&sensor=false&key=AIzaSyDDNE6N-Ltg6BZQTyLt5Rfcs6ogJO0ZBGA";
             return url;
         } catch (IOException e) {
             e.printStackTrace();
@@ -234,7 +234,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
             getActivity().startActivityForResult(intent, MAPS_ACTIVITY_REQUEST_CODE);
             Log.e("Test", "DETAILFRAGMENT Lancement MapActivity");
         } else {
-            Toast.makeText(getContext(), "Vous êtes connecté à aucun réseau", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "No network", Toast.LENGTH_LONG).show();
         }
     }
 

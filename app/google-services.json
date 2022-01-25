@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "626015908473",
+    "project_id": "realestatemanager-31d8b",
+    "storage_bucket": "realestatemanager-31d8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626015908473:android:628df1b0ee4da80edb1aa8",
+        "android_client_info": {
+          "package_name": "com.francotte.realestatemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626015908473-30pfhauv7f9clf7fni99lolvcs0ijnqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6d-Xs2Cke6wMOliCovKP4byhpjTkVs78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626015908473-30pfhauv7f9clf7fni99lolvcs0ijnqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
